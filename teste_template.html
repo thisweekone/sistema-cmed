@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar Importação - CMED</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+        .header {
+            border-bottom: 1px solid #e5e5e5;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+        .preview-table {
+            font-size: 0.9em;
+        }
+        .table-responsive {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Confirmar Importação</h1>
+            <p class="lead">Arquivo: teste.xlsx</p>
+        </div>
+        
+        <form method="post" action="/confirmar_importacao/teste123">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Mapeamento de Colunas</h3>
+                        </div>
+                        <div class="card-body">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Campo do Sistema</th>
+                                        <th>Coluna do Arquivo</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Substância <span class="text-danger">*</span></td>
+                                        <td>Substância</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Laboratório <span class="text-danger">*</span></td>
+                                        <td>Laboratório</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Prévia dos Dados</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-sm preview-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Substância</th>
+                                            <th>Laboratório</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Substância 1</td>
+                                            <td>Lab 1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Substância 2</td>
+                                            <td>Lab 2</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h3>Informações da Publicação</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class="mb-3">
+                                <label for="data_publicacao" class="form-label">Data de Publicação</label>
+                                <input type="date" class="form-control" id="data_publicacao" name="data_publicacao" required>
+                                <div class="form-text">Informe a data de publicação dos valores da tabela CMED que está sendo importada.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="d-flex justify-content-between mt-4">
+                <a href="/mapear_colunas/teste123" class="btn btn-secondary">Voltar</a>
+                <button type="submit" class="btn btn-success">Confirmar e Importar</button>
+            </div>
+        </form>
+        
+        <footer class="mt-5 pt-3 text-muted border-top">
+            <p>Dados obtidos da tabela CMED (Câmara de Regulação do Mercado de Medicamentos)</p>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

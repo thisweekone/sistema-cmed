@@ -1,0 +1,39 @@
+# Arquivos temporários
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambiente virtual
+venv/
+env/
+ENV/
+
+# Arquivos de variáveis de ambiente
+.env
+
+# Arquivos de sessão
+sessoes/
+*.session
+
+# Arquivos de log
+*.log
+log/
+logs/
+
+# Arquivos temporários de upload
+uploads/
+temp/
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Arquivos específicos do projeto
+data_temp/

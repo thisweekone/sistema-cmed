@@ -1,0 +1,60 @@
+{
+  "medicamentos": [
+    {
+      "id": "12345",
+      "substancia": "PARACETAMOL",
+      "laboratorio": "GENÉRICO",
+      "apresentacao": "500 MG COM CT BL AL PLAS TRANS X 20",
+      "classe_terapeutica": "ANALGÉSICOS NÃO NARCÓTICOS",
+      "tipo_produto": "GENÉRICO",
+      "regime_preco": "REGULADO"
+    },
+    {
+      "id": "67890",
+      "substancia": "DIPIRONA",
+      "laboratorio": "GENÉRICO",
+      "apresentacao": "500 MG COM CT BL AL PLAS TRANS X 10",
+      "classe_terapeutica": "ANALGÉSICOS NÃO NARCÓTICOS",
+      "tipo_produto": "GENÉRICO",
+      "regime_preco": "REGULADO"
+    }
+  ],
+  "precos": [
+    {
+      "id_medicamento": "12345",
+      "ano": 2023,
+      "mes": 1,
+      "pf_sem_imposto": 5.50,
+      "pf_0": 7.25,
+      "pf_12": 7.89,
+      "pf_17": 8.45,
+      "pf_17_5": 8.50,
+      "pf_18": 8.55,
+      "pf_19": 8.60,
+      "pmc_0": 10.15,
+      "pmc_12": 11.05,
+      "pmc_17": 11.83,
+      "pmc_17_5": 11.90,
+      "pmc_18": 11.97,
+      "pmc_19": 12.04
+    },
+    {
+      "id_medicamento": "67890",
+      "ano": 2023,
+      "mes": 1,
+      "pf_sem_imposto": 4.20,
+      "pf_0": 5.55,
+      "pf_12": 6.03,
+      "pf_17": 6.46,
+      "pf_17_5": 6.50,
+      "pf_18": 6.54,
+      "pf_19": 6.58,
+      "pmc_0": 7.77,
+      "pmc_12": 8.44,
+      "mmc_17": 9.04,
+      "mmc_17_5": 9.10,
+      "mmc_18": 9.16,
+      "mmc_19": 9.21
+    }
+  ]
+}
